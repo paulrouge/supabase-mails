@@ -1,10 +1,18 @@
-<mjml>
-  <mj-body>
-    <mj-section>
-      <mj-column>
-        <mj-text font-size="20px" font-family="Helvetica Neue">Confirm your email</mj-text>
-        <mj-button href="{{ .ConfirmationURL }}">Confirm Email</mj-button>
-      </mj-column>
-    </mj-section>
-  </mj-body>
-</mjml>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Confirm Your Email</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; padding: 20px;">
+    <h2>Confirm your email</h2>
+    <p>Click the button below to confirm your email address:</p>
+    <a
+      href="{{ .ConfirmationURL }}"
+      style="display: inline-block; padding: 10px 20px; background-color: #4f46e5; color: white; text-decoration: none; border-radius: 4px;"
+    >
+      Confirm Email
+    </a>
+    <p>If you didn’t request this, just ignore this email.</p>
+  </body>
+</html>
