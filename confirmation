@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Confirm Your Email</title>
-  </head>
-  <body style="font-family: Arial, sans-serif; padding: 20px;">
-    <h2>Confirm your email</h2>
-    <p>Click the button below to confirm your email address:</p>
-    <a
-      href="{{ .ConfirmationURL }}"
-      style="display: inline-block; padding: 10px 20px; background-color: #4f46e5; color: white; text-decoration: none; border-radius: 4px;"
-    >
-      Confirm Email
-    </a>
-    <p>If you didn’t request this, just ignore this email.</p>
-  </body>
-</html>
+<h1>Confirm your signup to Wallet Confirm.</h1>
+
+<a href="{{ .ConfirmationURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=signup&redirect_to={{ .RedirectTo }}/test"><h2>Confirm your mail<h2></a>
