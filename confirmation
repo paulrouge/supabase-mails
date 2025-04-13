@@ -1,0 +1,10 @@
+<mjml>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="20px" font-family="Helvetica Neue">Confirm your email</mj-text>
+        <mj-button href="{{ .ConfirmationURL }}">Confirm Email</mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
