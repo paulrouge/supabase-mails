@@ -1,6 +1,6 @@
 <h1>Confirm your signup to Wallet Confirm.</h1>
 
-<a href="{{ .ConfirmationURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=signup&redirect_to={{ .RedirectTo }}/test">
+<a href="{{ .ConfirmationURL }}">
   <h2>Confirm your mail</h2>
 </a>
 
