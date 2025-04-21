@@ -3,5 +3,4 @@
 <a href="{{ printf "%s%s%s" .Data.LinkPartOne .TokenHash .Data.LinkPartTwo }}">
   <h2>Confirm your mail</h2>
 </a>
-
-
+<p>{{ .ConfirmationURL }}</p>
