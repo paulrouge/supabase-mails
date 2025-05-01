@@ -1,6 +1,99 @@
-<h1>Confirm your signup to Wallet Confirm.</h1>
-
-<a href="{{ printf "%s%s%s" .Data.LinkPartOne .TokenHash .Data.LinkPartTwo }}">
-  <h2>Confirm your mail</h2>
-</a>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalletConfirm Account Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo-text {
+            color: #2563eb;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h1 {
+            color: #1e40af;
+            font-size: 22px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #4b5563;
+        }
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .confirm-button {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+        .confirm-button:hover {
+            background-color: #1d4ed8;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 12px;
+            color: #6b7280;
+        }
+        .footer a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="logo">
+            <span class="logo-text">WalletConfirm</span>
+        </div>
+        
+        <h1>Verify Your Wallet Ownership</h1>
+        
+        <p>Thank you for using WalletConfirm, the trusted service for wallet ownership verification.</p>
+        
+        <p>To complete your registration and start verifying your wallet ownership, please confirm your email address by clicking the button below:</p>
+        
+        <div class="button-container">
+            <a href="{{ printf "%s%s%s" .Data.LinkPartOne .TokenHash .Data.LinkPartTwo }}" class="confirm-button">
+                Verify Email Address
+            </a>
+        </div>
+        
+        <p>This link will expire in 24 hours. If you didn't request this verification, please disregard this email.</p>
+        
+        <p>WalletConfirm helps companies verify blockchain wallet ownership securely and efficiently. Our service provides the trust layer needed for blockchain-based applications and services.</p>
+        
+        <div class="footer">
+            <p>&copy; 2025 WalletConfirm | <a href="https://walletconfirm.com">walletconfirm.com</a></p>
+            <p>This is an automated message, please do not reply to this email.</p>
+        </div>
+    </div>
+</body>
+</html>
