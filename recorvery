@@ -77,14 +77,14 @@
         <p>Use the link below to reset your password. If you didn't request a password reset, please disregard this email.</p>
         
         <div class="button-container">
-            <a href="{{ printf "%s%s%s" .Data.LinkPartOne .TokenHash .Data.LinkPartTwo }}" class="confirm-button">
+            <a href="{{ .ConfirmationURL }}" class="confirm-button">
                 Reset Password
             </a>
         </div>
 
         <p>{{ .RedirectTo }}</p>
 <p>{{ .Data.RedirectTo }}</p>
-<p>{{ .Data }}</p>
+<p>{{ .ConfirmationURL }}</p>
         <p>WalletConfirm helps companies verify blockchain wallet ownership securely and efficiently. 
         Our service provides the trust layer needed for blockchain-based applications and services.</p>
         
