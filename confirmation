@@ -26,11 +26,11 @@
         }
         .logo-text {
             color: #2563eb;
-            font-size: 24px;
+            font-size: 30px;
             font-weight: bold;
         }
         h1 {
-            color: #1e40af;
+      		color: #4b5563;
             font-size: 22px;
             margin-bottom: 20px;
             text-align: center;
@@ -74,11 +74,9 @@
             <span class="logo-text">WalletConfirm</span>
         </div>
         
-        <h1>Verify Your Wallet Ownership</h1>
+        <p>Thank you for signing up to WalletConfirm, the trusted service for wallet ownership verification.</p>
         
-        <p>Thank you for using WalletConfirm, the trusted service for wallet ownership verification.</p>
-        
-        <p>To complete your registration and start verifying your wallet ownership, please confirm your email address by clicking the button below:</p>
+        <p>To complete your registration and start verifying wallet ownership of your users, please confirm your email address by clicking the button below:</p>
         
         <div class="button-container">
             <a href="{{ printf "%s%s%s" .Data.LinkPartOne .TokenHash .Data.LinkPartTwo }}" class="confirm-button">
