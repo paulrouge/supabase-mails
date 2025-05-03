@@ -82,9 +82,6 @@
             </a>
         </div>
 
-        <p>{{ .RedirectTo }}</p>
-<p>{{ .Data.RedirectTo }}</p>
-<p>{{ .ConfirmationURL }}</p>
         <p>WalletConfirm helps companies verify blockchain wallet ownership securely and efficiently. 
         Our service provides the trust layer needed for blockchain-based applications and services.</p>
         
